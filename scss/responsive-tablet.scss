@@ -1,0 +1,225 @@
+/* import Local SCSS Files */
+@import 'variables';
+@import 'reset';
+@import 'fonts';
+/* responsive Tablet */
+@media (min-width:768px) and (max-width:1024px){
+  /* ########## Common CSS ########## */
+  section:not(.front-slider){padding: 35px 0;}
+  [class*=inner]{width:90%; margin: auto;}
+  /* ########## Header ########## */
+  header{
+    .header-inner{
+      padding: 0 10px;
+      .search{width: 300px;}
+    }
+    .mega-navi{
+      .mega-navi-inner{
+        width: 100%;
+        padding: 10px 20px;
+        b{
+          font-size: 0.9rem;
+        }
+        .mega-navi-item{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  /* ########## section : front-slider ########## */
+  .front-slider{
+    .front-slider-items{
+      .front-slider-item{
+        .front-slider-item-wrap{
+          width: 100%;
+          height: auto;
+          .desc{
+            width: 50%;
+            text-align: center;
+            b{font-size: 16px;}
+            h2{font-size: 24px; margin: 15px auto;
+              }
+            span{}
+          }
+          .pic{
+            img{width: 300px;}
+          }
+        }
+      }
+    }
+  }
+  /* ########## section : category-shortcut ########## */
+  .category-shortcut{
+    .category-shortcut-inner{
+      .category-shortcut-items{
+        flex-wrap: wrap;
+        .category-shortcut-item{
+          flex-basis: 25%;
+          padding: 20px 0; height: auto;
+          span{font-size: 15px;}
+        }
+      }
+    }
+  }
+  /* ########## section : swiper mySwiper02 ########## */
+
+  /* ########## section : best-class ########## */
+  .best-class{
+    .best-class-inner{
+      .best-class-content{
+        .best-class-wrap{
+          flex-direction: column-reverse;
+          .best-class-banner{
+            display: none;
+            img{}
+          }
+          .best-class-banner-tablet{
+            display: block;
+            border-radius: 10px; overflow: hidden;
+            img{width: 100%;}
+          }
+        }
+      }
+    }
+  }
+  /* ########## section : early-bird ########## */
+  .early-bird{
+  .early-bird-inner{
+    .early-bird-content{
+      .banner-thumb{
+        img{width: 250px;}
+      }
+    }
+  }
+}
+  /* ########## section : blog ########## */
+  .blog{
+    .blog-inner{
+      .blog-content{
+        .blog-items{
+          .blog-item{
+            .thumb{
+              height: 160px;
+              img{}
+            }
+            .desc{
+              .blog-sort{}
+              .blog-outline{}
+              .blog-writer{
+                .writer-avata{}
+                .writer-info{
+                  b{}
+                  .date-comment{}
+                }
+              }
+  
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ########## section : slogan ########## */
+  .slogan{padding: 25px !important;}
+  /* ########## section : tip-tech ########## */
+  .tip-tech{
+    .tip-tech-inner{
+      .tip-tech-content{
+        .tip-tech-wrap{
+          .tip-tech-items{
+            .tip-tech-item{
+              .thumb{display: none;}
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ########## footer-include ########## */
+  footer{
+    padding: 30px 20px;
+    .footer-inner{
+      .lnb-wrap{
+        gap: 40px;
+        .footer-slogan{
+          h3{font-size: 1.2rem;}
+        }
+        .sns{
+          transform: translateY(-20px);
+          a{
+            display: inline-block;
+            margin-right: 0.5rem;
+            &:hover .bi{color: $white;}
+          }
+        }
+      }
+      .copyright-wrap{
+        address{
+          width: 65%;
+        }
+      }
+    }
+  }
+  /* ########## front-event-banner ########## */
+
+  /* 서브페이지 */
+  /* ########## category-main ########## */
+  .category-class{
+    .category-class-inner{
+      .category-class-wrap{
+        .focus-class-items{
+          .focus-class-item{
+            width: calc(100% / 2 - 20px) !important;
+          }
+        }
+      }
+    }
+  }
+  /* ########## class-detail ########## */
+  .class-detail-image{
+  padding: 0 !important;
+  background-size: cover;
+  .class-detail-image-inner{
+    height: 300px;
+    padding: 30px 0;
+    .heading{
+      h2{
+        font-size: 24px;
+      }
+      p{
+        font-size: 16px;
+        margin-top: 10px;
+      }
+    }
+    .cover-image{
+      img{width: 250px;}
+    }
+  }
+}
+  .class-detail-full{
+    .class-detail-full-inner{
+      .class-detail-full-content{
+        flex-direction: column-reverse;
+        .class-detail-info{
+          /* Aticle : class-introduce */
+          /* Aticle : class-mentor */
+          .class-mentor{
+            .class-detail-wrap{
+              .mentor-profile-summary{
+                .mentor-class-button{
+                  .btn-mentor-profile{
+                    padding: 3px 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .class-detail-sidebar{
+          position: static; /* 포지션 스티키 고정하기 */
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

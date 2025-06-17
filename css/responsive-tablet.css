@@ -1,0 +1,216 @@
+@charset "UTF-8";
+/* import Local SCSS Files */ /* Font Family */
+/* Text Color */
+/* Object Color */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+li {
+  padding: 0;
+  list-style: none;
+}
+
+/* bootstrap icons */
+/* web fonts */
+/* Montserrat */
+/* SUIT */
+/*  */
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 여기어때 잘난체 */
+@font-face {
+  font-family: "yg-jalnan";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* responsive Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* ########## Common CSS ########## */
+  section:not(.front-slider) {
+    padding: 35px 0;
+  }
+  [class*=inner] {
+    width: 90%;
+    margin: auto;
+  }
+  /* ########## Header ########## */
+  header .header-inner {
+    padding: 0 10px;
+  }
+  header .header-inner .search {
+    width: 300px;
+  }
+  header .mega-navi .mega-navi-inner {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  header .mega-navi .mega-navi-inner b {
+    font-size: 0.9rem;
+  }
+  header .mega-navi .mega-navi-inner .mega-navi-item {
+    font-size: 13px;
+  }
+  /* ########## section : front-slider ########## */
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap {
+    width: 100%;
+    height: auto;
+  }
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .desc {
+    width: 50%;
+    text-align: center;
+  }
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .desc b {
+    font-size: 16px;
+  }
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .desc h2 {
+    font-size: 24px;
+    margin: 15px auto;
+  }
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .pic img {
+    width: 300px;
+  }
+  /* ########## section : category-shortcut ########## */
+  .category-shortcut .category-shortcut-inner .category-shortcut-items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    padding: 20px 0;
+    height: auto;
+  }
+  .category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item span {
+    font-size: 15px;
+  }
+  /* ########## section : swiper mySwiper02 ########## */
+  /* ########## section : best-class ########## */
+  .best-class .best-class-inner .best-class-content .best-class-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap .best-class-banner {
+    display: none;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap .best-class-banner-tablet {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap .best-class-banner-tablet img {
+    width: 100%;
+  }
+  /* ########## section : early-bird ########## */
+  .early-bird .early-bird-inner .early-bird-content .banner-thumb img {
+    width: 250px;
+  }
+  /* ########## section : blog ########## */
+  .blog .blog-inner .blog-content .blog-items .blog-item .thumb {
+    height: 160px;
+  }
+  /* ########## section : slogan ########## */
+  .slogan {
+    padding: 25px !important;
+  }
+  /* ########## section : tip-tech ########## */
+  .tip-tech .tip-tech-inner .tip-tech-content .tip-tech-wrap .tip-tech-items .tip-tech-item .thumb {
+    display: none;
+  }
+  /* ########## footer-include ########## */
+  footer {
+    padding: 30px 20px;
+  }
+  footer .footer-inner .lnb-wrap {
+    gap: 40px;
+  }
+  footer .footer-inner .lnb-wrap .footer-slogan h3 {
+    font-size: 1.2rem;
+  }
+  footer .footer-inner .lnb-wrap .sns {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  footer .footer-inner .lnb-wrap .sns a {
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+  footer .footer-inner .lnb-wrap .sns a:hover .bi {
+    color: #FFFFFF;
+  }
+  footer .footer-inner .copyright-wrap address {
+    width: 65%;
+  }
+  /* ########## front-event-banner ########## */
+  /* 서브페이지 */
+  /* ########## category-main ########## */
+  .category-class .category-class-inner .category-class-wrap .focus-class-items .focus-class-item {
+    width: calc(50% - 20px) !important;
+  }
+  /* ########## class-detail ########## */
+  .class-detail-image {
+    padding: 0 !important;
+    background-size: cover;
+  }
+  .class-detail-image .class-detail-image-inner {
+    height: 300px;
+    padding: 30px 0;
+  }
+  .class-detail-image .class-detail-image-inner .heading h2 {
+    font-size: 24px;
+  }
+  .class-detail-image .class-detail-image-inner .heading p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .class-detail-image .class-detail-image-inner .cover-image img {
+    width: 250px;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info {
+    /* Aticle : class-introduce */
+    /* Aticle : class-mentor */
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-mentor .class-detail-wrap .mentor-profile-summary .mentor-class-button .btn-mentor-profile {
+    padding: 3px 10px;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-sidebar {
+    position: static; /* 포지션 스티키 고정하기 */
+    margin-bottom: 20px;
+  }
+}
