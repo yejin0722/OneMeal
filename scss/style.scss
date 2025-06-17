@@ -639,16 +639,17 @@ footer{
 /* ########## front-event-banner ########## */
 .front-event-banner{
   position: absolute;
-  right: 10%; bottom: 50px;
+  right: 12%; bottom: 140px;
   z-index: 1000;
   .event-banner-item{
     &.mentor-apply{
       border-radius: 60px; overflow: hidden;
     }
     &.new-year{
-      border-radius: 10px 10px 0 0; overflow: hidden;
+      border-radius: 15px 15px 0 0; overflow: hidden;
       border: 1px solid $silver-gray;
-      width: 360px; height: 360px;
+      width: 360px; height: 310px;
+      img{width: 360px; object-fit: cover;}
     }
   }
   .close-buttons{

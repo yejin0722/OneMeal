@@ -970,8 +970,8 @@ footer .footer-inner .copyright-wrap .sns a:hover .bi {
 /* ########## front-event-banner ########## */
 .front-event-banner {
   position: absolute;
-  right: 10%;
-  bottom: 50px;
+  right: 12%;
+  bottom: 140px;
   z-index: 1000;
 }
 .front-event-banner .event-banner-item.mentor-apply {
@@ -979,11 +979,16 @@ footer .footer-inner .copyright-wrap .sns a:hover .bi {
   overflow: hidden;
 }
 .front-event-banner .event-banner-item.new-year {
-  border-radius: 10px 10px 0 0;
+  border-radius: 15px 15px 0 0;
   overflow: hidden;
   border: 1px solid #EEEEEE;
   width: 360px;
-  height: 360px;
+  height: 310px;
+}
+.front-event-banner .event-banner-item.new-year img {
+  width: 360px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .front-event-banner .close-buttons {
   background-color: #FFFFFF;
@@ -2109,7 +2114,7 @@ footer .footer-inner .copyright-wrap .sns a:hover .bi {
   margin-right: 3px;
   -webkit-transform: translateY(3px);
           transform: translateY(3px);
-  background: url("/images/icon-custom-radio.png") no-repeat;
+  background: url("../images/icon-custom-radio.png") no-repeat;
   background-position: left;
 }
 .take-course .take-course-inner .payment .payment-method-wrap > div label input[type=radio]:checked + em {
